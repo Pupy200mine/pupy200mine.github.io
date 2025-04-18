@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Upload a Custom World to a Minecraft Bedrock Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0a0a23;
+            color: #ffffff;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        .summary {
+            background-color: #1a1a3a;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            background-color: #1a1a3a;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .step {
+            margin-bottom: 30px;
+        }
+        .step-content {
+            margin-bottom: 10px;
+        }
+        .step-number {
+            font-weight: bold;
+            color: #ffffff;
+            margin-right: 10px;
+        }
+        .highlight {
+            color: #9c5cff;
+        }
+        .button {
+            background-color: #44c767;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .export-button {
+            background-color: #4a90e2;
+        }
+        .stop-button {
+            background-color: #ff4c4c;
+        }
+        .start-button {
+            background-color: #2c3e50;
+        }
+        .save-button {
+            background-color: #2c3e50;
+        }
+        .code {
+            font-family: monospace;
+            background-color: #2a2a4a;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .file-extension {
+            color: #ff6b6b;
+        }
+        .step-image {
+            display: block;
+            width: 50%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 5px;
+            margin: 15px 0;
+            border: 1px solid #666;
+        }
+        .image-container {
+            margin-top: 10px;
+        }
+        .rating {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #44c767;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Upload a Custom World to a Minecraft Bedrock Server</h1>
+    
+    <div class="summary">
+        <h2>Summary</h2>
+        <p>Uploading a custom world, single-player or downloaded online, to a <span class="highlight">Minecraft Bedrock</span> server allows sharing the world with other players, collaborating on projects, and exploring together. It also provides a way to backup the <span class="highlight">world</span> and ensure it is safe from any data loss. Also, hosting a Bedrock server can provide a more stable and reliable gameplay experience as it runs on dedicated hardware with consistent performance.</p>
+    </div>
+    
+    <div class="instructions">
+        <h2>How to Upload a Custom World to a Minecraft Bedrock Server (Singleplayer)</h2>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">1.</span> <strong>Launch</strong> Minecraft Bedrock.
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">2.</span> <strong>Click Play</strong> 
+            </div>
+            <div class="image-container">
+                <img src="play_button.png" alt="Play button in Minecraft Bedrock" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">3.</span> <strong>Select the</strong> <strong>pencil icon</strong> beside your preferred world.
+            </div>
+            <div class="image-container">
+                <img src="edit_button.png" alt="Pencil icon next to world" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">4.</span> <strong>On the</strong> <strong>Game</strong> tab, scroll to the bottom and click <strong>Export World</strong>.
+            </div>
+            <div class="image-container">
+                <img src="export_world.png" alt="Export World button" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">5.</span> <strong>Export</strong> the world to a folder.
+            </div>
+            <div class="image-container">
+                <img src="export_to_folder.png" alt="Export button" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">6.</span> <strong>Minimize</strong> the folder to use later in the tutorial.
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">7.</span> <strong>Log in</strong> to your hosting provider's <span class="highlight">control panel</span>.
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">8.</span> <strong>Stop</strong> the server.
+            </div>
+            <div class="image-container">
+                <img src="stop_server.png" alt="Server control buttons showing Stop button" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">9.</span> <strong>Go to</strong> the <strong>Files</strong> tab located on the left.
+            </div>
+            <div class="image-container">
+                <img src="files_tab.png" alt="Files tab on the left panel" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">10.</span> <strong>Find</strong> the following directory: <span class="code">/home/container/worlds</span>
+            </div>
+            <div class="image-container">
+                <img src="worlds_directory.png" alt="Directory path to worlds folder" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">11.</span> <strong>Create</strong> a folder with the same name as the <span class="file-extension">.MCWORLD</span> file.
+            </div>
+            <div class="image-container">
+                <img src="folder_creation.png" alt="Creating new folder" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">12.</span> <strong>Open</strong> the folder and <strong>copy</strong> the <span class="file-extension">.MCWORLD</span> file inside.
+            </div>
+            <div class="image-container">
+                <img src="file_copy.png" alt="Copying MCWORLD file to folder" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">13.</span> <strong>Rename</strong> the file extension from <span class="file-extension">.MCWORLD</span> to <span class="file-extension">.ZIP</span>
+            </div>
+            <div class="image-container">
+                <img src="file_rename.png" alt="Renaming file extension to ZIP" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">14.</span> <strong>Unzip</strong> the <span class="file-extension">.ZIP</span> file by right-clicking -> <strong>Unarchive</strong>
+            </div>
+            <div class="image-container">
+                <img src="file_unarchive.png" alt="Right-click menu showing Unarchive option" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">15.</span> <strong>Go</strong> to the <strong>Config Files</strong> tab and click on <strong>Server Properties</strong>
+            </div>
+            <div class="image-container">
+                <img src="server_properties.png" alt="Config Files tab" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">16.</span> <strong>On the</strong> <span class="code">level-name=</span> line, <strong>change</strong> the value to your world name.
+            </div>
+            <div class="image-container">
+                <img src="level_name.png" alt="Editing level-name in config file" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">17.</span> <strong>Choose</strong> the <strong>Save Content</strong> button on the lower right.
+            </div>
+            <div class="image-container">
+                <img src="level_name_save.png" alt="Save Content button" class="step-image">
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-content">
+                <span class="step-number">18.</span> <strong>Start</strong> the server.
+            </div>
+            <div class="image-container">
+                <img src="start_server.png" alt="Server control buttons showing Start button" class="step-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
