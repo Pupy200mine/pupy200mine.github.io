@@ -73,14 +73,14 @@
             color: #ff6b6b;
         }
         .step-image {
-            display: block;
-            width: 50%;
-            max-width: 600px;
-            height: auto;
-            border-radius: 5px;
-            margin: 15px 0;
-            border: 1px solid #666;
-        }
+        display: block;
+        width: 70%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 5px;
+        margin: 15px auto; /* Centra la imagen horizontalmente */
+        border: 1px solid #666;
+    }
         .image-container {
             margin-top: 10px;
             position: relative;
@@ -312,7 +312,7 @@
                     }
         
                     magnifier.style.display = 'block';
-                    magnifier.style.left = `${x - magnifier.offsetWidth / 2}px`;
+                    magnifier.style.left = `${x - magnifier.offsetWidth / 30}px`;
                     magnifier.style.top = `${y - magnifier.offsetHeight / 2}px`;
         
                     const zoomX = -x * 2 + magnifier.offsetWidth / 2;
